@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu with Grid</title>
+    <style>
+        /* Grid container styles */
+        ul.menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px; /* Space between grid items */
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Apply a margin to all list items */
+        ul.menu li {
+            background-color:beige;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Apply reduced opacity to items with the "unavailable" class */
+        ul.menu li.unavailable {
+            opacity: 0.5;
+            background-color:dimgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul class="menu">
+        <li>Grilled Chicken</li>
+        <li class="unavailable">Pasta Alfredo</li>
+        <li>Caesar Salad</li>
+        <li class="unavailable">Beef Steak</li>
+        <li>Vegetable Stir-fry</li>
+        <li>Fish Tacos</li>
+        <li class="unavailable">Lamb Chops</li>
+        <li>Margherita Pizza</li>
+    </ul>
+</body>
+</html>
